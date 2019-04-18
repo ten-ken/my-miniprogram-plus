@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/my-card/index",
+    "pages/blank-page/index",
+    "pages/loadmore/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

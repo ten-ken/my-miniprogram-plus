@@ -1,0 +1,33 @@
+<view class='title'>
+  <x-button bind:click="handleClick" inline data-type='' bind:click="handleClick">默认类型</x-button>
+  <x-button bind:click="handleClick" type="info" inline data-type='flex' bind:click="handleClick">flex类型</x-button>
+  <x-button bind:click="handleClick" type="primary" inline data-type='inline-block' bind:click="handleClick">inline-block类型</x-button>
+</view>
+
+<x-card type='{{type}}' wx:for='{{list}}' wx:key='{{index}}'  imgUrl='{{item.url}}' title='{{item.title}}' price='{{item.price}}' otherPrice='{{item.otherPrice}}' tag="{{item.tag}}" tag_color="mauve" description="{{item.description}}" hidden_desc="true" tag_type="circle" comdityId="{{item.id}}"
+bindskipPage="skipPage"
+></x-card>
+
+<!-- 商品列表和详情都可做 list有为商品集合
+ type是展示风格
+ imgUrl图片地址 title商品名称  price商品折后价 otherPrice商品原价  tag商品标签  tag_color标签颜色
+description 商品描述 hidden_desc是否隐藏描述 tag_type 为空就是默认矩形 为circle是右侧半圆
+bindskipPage:绑定本页面的方法  方法名自己定义
+-->
+
+<!-- tag_color颜色种类有16-20种可选（填写red这样的属性即可）：
+ --red: #e54d42;
+  --orange: #f37b1d;
+  --yellow: #fbbd08;
+  --olive: #8dc63f;
+  --green: #39b54a;
+  --cyan: #1cbbb4;
+  --blue: #0081ff;
+  --purple: #6739b6;
+  --mauve: #9c26b0;
+  --pink: #e03997;
+  --brown: #a5673f;
+  --grey: #8799a3;
+  --gray: #aaa;
+  --black: #333;
+  --white: #fff; -->

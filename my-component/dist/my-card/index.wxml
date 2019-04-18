@@ -1,0 +1,33 @@
+<view class="card x-class card-{{type}}"  bindtap='skip_commdity'
+data-comdityId="{{comdityId}}" >
+<!-- bindtap='abc' -->
+  <view class='goods_image'>
+    <view class="padding-sm flex flex-wrap" wx:if="{{tag}}">
+      <view class="padding-xs"> 
+        <view class="cu-tag bg-{{tag_color}} {{tag_type}}">{{tag}}</view>
+      </view>
+    </view>
+    <image src='{{imgUrl}}' mode='widthFix'></image>
+  </view>
+  <view class='goods_info'>
+    <view class='goods_title'>{{title}}</view>
+ 
+    <view class='description_hidden' wx:if="{{type==''&& !hidden_desc}}">{{description}}</view>
+    <view class='price-info'>
+      
+      <view wx:if='{{price==null || price=="" || price==otherPrice }}'>
+      <!-- 只有折后价为空或者 等于原价 此时显示原价 -->
+        <text class='price-text'>￥{{otherPrice}}</text>
+      </view>
+      <view wx:else>
+        <text class='price-text'>￥{{price}}</text>
+        <text class='otherPrice'>￥{{otherPrice}}</text>     
+      </view>
+      <view wx:if='{{number}}'>
+        <text>X</text>
+        <text>{{number}}</text>
+      </view>
+    </view>
+    <slot></slot>
+  </view>
+</view>

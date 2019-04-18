@@ -1,0 +1,1 @@
+  <my-loading isShow="{{true}}" showTypes="SEARCH" isHideLoadMore="{{isHideLoadMore}}" title="抱歉！没找到相关秒杀商品" tip="" ></my-loading>

@@ -1,0 +1,12 @@
+
+  <view class="loadmore" wx:if="{{isOver || isHideLoadMore}}">
+    <block wx:if="{{isOver && totalPages>0}}">
+      <view class="loadmore__line"></view>
+      <text class="loadmore__text">{{content}}</text>
+      <view class="loadmore__line"></view>
+    </block>
+    <view wx:if="{{isHideLoadMore}}" class="loadmore__wrap">
+      <text class="loadmore__loading-text">{{loading_info}}</text>
+    </view>
+  </view>
+

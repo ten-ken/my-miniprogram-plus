@@ -1,0 +1,9 @@
+  <view >
+    <view class="abnor" hidden="{{!isShow || isHideLoadMore}}">
+      <view class="abnor__box" >
+       <image class="abnor__image" wx:if="{{imageInfo[showTypes].image}}"  src="{{imageInfo[showTypes].image}}" mode="widthFix"></image> 
+        <view class="abnor__text" wx:if="{{imageInfo[showTypes].title || title}}">{{!title?imageInfo[showTypes].title:title}}</view>
+        <view class="abnor__tip" wx:if="{{imageInfo[showTypes].tip || tip}}">{{!tip?imageInfo[showTypes].tip:tip}}</view>
+      </view>
+    </view>
+  </view>

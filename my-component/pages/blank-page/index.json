@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "空白页面",
+  "usingComponents": {
+    "my-loading": "/dist/blank-page/index"
+  }
+}
