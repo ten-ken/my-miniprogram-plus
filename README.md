@@ -174,8 +174,8 @@ showTypes参照以下json里面的属性名
 ```
 | 参数       | 作用   |类型    |  默认值 |
 | --------   | -----:  |-----:  | :----:  |
-| isOver    | ----- |  是否无数据|  true   |
+| isOver    |是否无数据  | ----- |  true   |
 | isHideLoadMore     | 图片内容类型 | String |   DATA |
 | content    |  无数据的文本内容 | String  |  暂无数据   |
 | loading_info    | 加载更多的文本内容    | String  | 正在加载中    |
-| totalPages    | ----  | 数据条数 Number | 默认为0 |
+| totalPages    | 数据条数 |  Number | 默认为0 |
