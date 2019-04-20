@@ -1,4 +1,3 @@
-
   <view class="loadmore" wx:if="{{isOver || isHideLoadMore}}">
     <block wx:if="{{isOver && totalPages>0}}">
       <view class="loadmore__line"></view>

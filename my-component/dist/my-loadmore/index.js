@@ -6,11 +6,11 @@ Component({
   properties: {
     isOver: {
       type: Boolean,
-      value: true,
+      value: false,
     },
     isHideLoadMore: {
       type: Boolean,
-      value: true,
+      value: false,
     },
     totalPages: {
       type: Number,
