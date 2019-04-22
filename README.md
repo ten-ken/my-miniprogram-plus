@@ -22,6 +22,18 @@
 | tag_type    | 标签样式 | String  |  默认是矩形,'circle'为右侧半圆形|:----: |
 | comdityId    | 商品id | String/Number  |  ''   |:----: |
 
+### type为默认的样式
+
+ <p align="center"><img src="https://github.com/ten-ken/my-miniprogram-plus/blob/master/images/default%E7%B1%BB%E5%9E%8B.png?raw=true" alt="" ></p>	
+
+### type为'flex'的样式
+
+ <p align="center"><img src="https://github.com/ten-ken/my-miniprogram-plus/blob/master/images/fiex%E7%B1%BB%E5%9E%8B.png?raw=true" alt="" ></p>	
+ 
+ ### type为'inline-block'的样式
+
+ <p align="center"><img src="https://github.com/ten-ken/my-miniprogram-plus/blob/master/images/inline-block%E7%B1%BB%E5%9E%8B.png?raw=true" alt="" ></p>	
+
 | 事件       | 作用   |参数    | 
 | --------   | -----:  |-----:  | 
 | bindskipPage    | 绑定点击整个商品的触发事件 | 无 | 
