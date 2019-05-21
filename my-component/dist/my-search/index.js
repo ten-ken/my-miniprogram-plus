@@ -10,7 +10,7 @@ Component({
     },
     color:{
       type: String,
-      value:''
+      value:'red'
     }
   },
 
