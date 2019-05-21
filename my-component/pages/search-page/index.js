@@ -32,7 +32,7 @@ Page({
   searchTap: function () {
     let keyName = this.data.keyName;
     let searchData = this.data.searchResultDatas.map(function (res) {
-      return { key: keyName, name: res.text }
+      return { key: keyName, content: res.text }
     })
     this.setData({
        searchData

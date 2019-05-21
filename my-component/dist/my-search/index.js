@@ -27,7 +27,7 @@ Component({
   methods: {
     _dataChange: function (newVal) {
       console.log(newVal)
-      let searchArray = this._getLightArr(newVal.name,newVal.key)
+      let searchArray = this._getLightArr(newVal.content,newVal.key)
       this.setData({
         keyName: newVal.key,
         searchArray: searchArray
