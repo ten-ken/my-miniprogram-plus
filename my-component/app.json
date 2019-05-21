@@ -2,7 +2,8 @@
   "pages":[
     "pages/my-card/index",
     "pages/blank-page/index",
-    "pages/loadmore/index"
+    "pages/loadmore/index",
+    "pages/search-page/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

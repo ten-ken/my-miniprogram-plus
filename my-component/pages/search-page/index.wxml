@@ -1,0 +1,16 @@
+<view class="section">
+
+  <view class="view-search">
+    <input class="view-search-input" value="{{keyName}}" placeholder="输入搜索关键词" bindinput="bindInput" maxlength="11" />
+  </view>
+
+  <scroll-view class="scrollView" scroll-y>
+    <view wx:if="{{searchResultDatas.length > 0}}" class="search-content-body">
+      <block wx:for="{{searchResultDatas}}">
+        <view class="search-result-item">
+          <searchHL class="result-item" datas='{{searchData[index]}}' color="orange"/>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

@@ -4,11 +4,12 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.8",
@@ -43,9 +44,15 @@
 					"query": ""
 				},
 				{
-					"id": 1,
+					"id": 2,
 					"name": "加载更多",
 					"pathName": "pages/loadmore/index",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "关键词高亮显示",
+					"pathName": "pages/search-page/index",
 					"query": ""
 				}
 			]

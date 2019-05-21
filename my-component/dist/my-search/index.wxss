@@ -1,0 +1,37 @@
+/* 9种颜色可配 */
+
+.font-style-red {
+  color: #e54d42;
+}
+
+.font-style-orange {
+  color: #f37b1d;
+}
+
+.font-style-yellow {
+  color: #fbbd08;
+}
+
+.font-style-olive {
+  color: #8dc63f;
+}
+
+.font-style-green {
+  color: #39b54a;
+}
+
+.font-style-cyan {
+  color: #1cbbb4;
+}
+
+.font-style-blue {
+  color: #0081ff;
+}
+
+.font-style-mauve {
+  color: #9c26b0;
+}
+
+.font-style-pink {
+  color: #e03997;
+}

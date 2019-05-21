@@ -1,0 +1,3 @@
+<view>
+  <text wx:for="{{searchArray}}" wx:key="*this"  class="{{item == keyName ? 'font-style-'+color : '' }}">{{item}}</text>
+</view>

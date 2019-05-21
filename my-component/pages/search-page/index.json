@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "searchHL": "/dist/my-search/index"
+  },
+  "navigationBartitleText": "搜索"
+}
