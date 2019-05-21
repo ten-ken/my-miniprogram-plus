@@ -191,3 +191,16 @@ showTypes参照以下json里面的属性名
 | content    |  无数据的文本内容 | String  |  暂无数据   |
 | loading_info    | 加载更多的文本内容    | String  | 正在加载中    |
 | totalPages    | 数据条数 |  Number | 默认为0 |
+
+### 1.4 高亮显示搜索文字
+  json引入:
+ ```
+ "usingComponents": {
+    "searchHL": "/dist/my-search/index"
+  },
+```
+| 参数       | 作用   |类型    |  默认值 |
+| --------   | -----:  |-----:  | :----:  |
+| datas      |   单个对象，内容如{key：'我',content:'呵呵呵'}| Object|     |
+| color     | 高亮显示颜色 | String |   'red' 颜色参考1.1部分的color-code 这里只有前面9种颜色 |
+
