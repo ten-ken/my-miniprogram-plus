@@ -3,7 +3,9 @@
     "pages/my-card/index",
     "pages/blank-page/index",
     "pages/loadmore/index",
-    "pages/search-page/index"
+    "pages/search-page/index",
+    "pages/my-dialog/index",
+     "pages/my-popup/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

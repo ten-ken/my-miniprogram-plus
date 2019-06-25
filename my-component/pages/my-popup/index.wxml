@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button bindtap="showPopup"> 点我 </button>
+  </view>
+  <popup id='popup' 
+      title='提示' 
+      content='模板文件也建好了，在首页用这个组件需要配置一下，首先建一个名为index.json的文件' 
+      btn_no='' 
+      line_color='red'
+      suc_bc='red'
+      err_bc=''
+      title_color='black'
+      btn_ok='确定'
+      bind:error="_error"  
+      bind:success="_success">
+  </popup>
+</view>

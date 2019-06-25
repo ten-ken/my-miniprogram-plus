@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "popup": "/dist/my-popup/index"
+  }
+}
