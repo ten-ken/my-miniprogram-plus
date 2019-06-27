@@ -1,16 +1,18 @@
 .wx-popup {
-  position: absolute;
+  position: fixed;
   left: 0;
+  right: 0;
   top: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, .5);
+  overflow: hidden;
 }
 .popup-container {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
-
   width: 80%;
   max-width: 600rpx;
   border: 2rpx solid #ccc;
@@ -28,7 +30,6 @@
   /* border-bottom: 2rpx solid red; */
 }
 .wx-popup-con {
-  margin: 60rpx 10rpx;
   text-align: center;
 }
 .wx-popup-btn {

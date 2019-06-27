@@ -1,23 +1,27 @@
 //获取应用实例
 const app = getApp()
+import Popup from '../../dist/my-popup/popup';
 
 Page({
+  data: {
+    show:false
+  },
   onReady: function () {
-    //获得popup组件
-    this.popup = this.selectComponent("#popup");
-  },
-  showPopup() {
-    this.popup.showPopup();
-  },
 
-  //取消事件
-  _error() {
-    console.log('你点击了取消');
-    this.popup.hidePopup();
   },
-  //确认事件
-  _success() {
-    console.log('你点击了确定');
-    this.popup.hidePopup();
+  showPopup() {//显示弹窗框
+    Popup.alert({
+      title: '提示',
+      content: '今天从上海到北京，走了三百公里,哈哈哈哈哈哈',
+      type:'String'
+    }).then((res) => {
+      console.log(111)
+    }).catch((res) => {
+      console.log(222)
+    });
+  },
+  _onConfirm(){//确认的点击回调事件
+    Popup.close();
+    console.log(8877);
   }
 })

@@ -24,6 +24,10 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
@@ -55,21 +59,12 @@
 					"pathName": "pages/search-page/index",
 					"query": ""
 				},
-          {
-            "id": 4,
-            "name": "弹窗-风格全文字",
-            "pathName": "pages/my-dialog/index",
-            "query": ""
-          }
-          ,
-          {
-            "id": 5,
-            "name": "弹窗-标题+内容",
-            "pathName": "pages/my-popup/index",
-            "query": ""
-          }
-
-          
+				{
+					"id": 5,
+					"name": "弹窗-标题+内容",
+					"pathName": "pages/my-popup/index",
+					"query": ""
+				}
 			]
 		}
 	}

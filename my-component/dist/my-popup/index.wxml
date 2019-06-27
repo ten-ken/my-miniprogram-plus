@@ -1,10 +1,20 @@
-<view class="wx-popup" hidden="{{flag}}">
+<view class="wx-popup" wx:if="{{show}}" style='z-index:{{zIndex}}'>
   <view class='popup-container'>
-    <view class="wx-popup-title" style="border-bottom:2rpx solid {{line_color}};color:{{title_color}}" wx:if="{{title}}">{{title}}</view>
-    <view class="wx-popup-con" >{{content}}</view>
-    <view class="wx-popup-btn" >
-      <text class="btn-no" bindtap='_error' wx:if="{{btn_no}}" style='color:{{err_bc}}'>{{btn_no}}</text>
-      <text class="btn-ok" bindtap='_success' wx:if="{{btn_ok}}" style='color:{{suc_bc}}'>{{btn_ok}}</text>
+    <block wx:if="{{type=='String'}}">
+      <view class="wx-popup-title" style="border-bottom:2rpx solid {{line_color}};color:{{title_color}}" wx:if="{{title}}">{{title}}        </view>
+    </block>
+    <block wx:else>
+      <view class="wx-popup-title" style="color:{{title_color}}" wx:if="{{title}}">{{title}}</view>
+    </block>
+
+<!-- {{type=="image"?"":"margin:60rpx 10rpx;"}} -->
+    <view class="wx-popup-con" style='margin:60rpx 10rpx;'>
+      <block wx:if="{{type=='String'}}">{{content}} </block>
+      <image src="{{content}}" wx:if="{{type=='image'}}" model="scaleToFill"></image>
+    </view>
+    <view class="wx-popup-btn">
+      <text class="btn-no" bindtap='_onCancel' wx:if="{{btn_no}}" style='color:{{err_bc}}'>{{btn_no}}</text>
+      <text class="btn-ok" bindtap='_onConfirm' wx:if="{{btn_ok}}" style='color:{{suc_bc}}'>{{btn_ok}}</text>
     </view>
   </view>
 </view>
