@@ -1,4 +1,7 @@
 # 我的小程序组件
+
+前言  导入小程序的部分 ==》 选择my-miniprogram-plus文件夹下的名为my-component文件夹 
+
 ## 1 my-miniprogram-plus 插件
 ### 1.1 商品列表组件
   json引入:
@@ -241,6 +244,7 @@ import Popup from '../../dist/my-popup/popup';
 | alert      |  弹窗对话框/显示弹窗|Popup.alert(); //Popup.alert( title: '提示',content: '今天从上海到北京，走了三百公里,哈哈哈哈哈哈',type: 'String');油蚕丝 |
 | close| 关闭弹窗 | Popup.close(); //如果组件id变动 需要这样调用   Popup.close({selector: '#my-Popups'}); selector是新的id值|
 
+ <p align="center"><img src="https://github.com/ten-ken/my-miniprogram-plus/blob/master/images/%E5%BC%B9%E7%AA%97%E7%9A%84%E6%96%B9%E6%B3%95.png" alt="" ></p>	
 
 
 
