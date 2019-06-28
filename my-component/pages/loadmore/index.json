@@ -1,4 +1,6 @@
 {
+    "enablePullDownRefresh": true,
+    "navigationBarTitleText": "加载更多",
   "usingComponents": {
     "my-loading": "/dist/my-loadmore/index"
   }

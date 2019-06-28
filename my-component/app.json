@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/my-card/index",
     "pages/blank-page/index",
     "pages/loadmore/index",

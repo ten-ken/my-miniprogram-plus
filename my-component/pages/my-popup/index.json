@@ -1,4 +1,6 @@
 {
+    "enablePullDownRefresh": true,
+    "navigationBarTitleText": "弹窗/对话框",
   "usingComponents": {
     "popup": "/dist/my-popup/index"
   }

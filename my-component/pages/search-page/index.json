@@ -1,4 +1,6 @@
 {
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "关键词高亮显示",
   "usingComponents": {
     "searchHL": "/dist/my-search/index"
   },

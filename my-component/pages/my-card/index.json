@@ -1,4 +1,6 @@
 {
+    "enablePullDownRefresh": true,
+    "navigationBarTitleText": "商品列表",
   "usingComponents": {
     "x-card":"/dist/my-card/index",
     "x-button": "/dist/my-button/index"
