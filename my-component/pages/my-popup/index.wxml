@@ -3,7 +3,7 @@
   <view class="userinfo">
     <button bindtap="showPopup"> 点我 </button>
   </view>
-  <popup id='my-Popup' 
+  <popup id='my-Popups'
       line_color='green'
       suc_bc='red'
       err_bc='green'

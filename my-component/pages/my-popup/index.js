@@ -4,13 +4,14 @@ import Popup from '../../dist/my-popup/popup';
 
 Page({
   data: {
-    show:false
+    //show:false
   },
   onReady: function () {
 
   },
   showPopup() {//显示弹窗框
     Popup.alert({
+      selector:'#my-Popups',
       title: '提示',
       content: '今天从上海到北京，走了三百公里,哈哈哈哈哈哈',
       type:'String'
@@ -21,7 +22,7 @@ Page({
     });
   },
   _onConfirm(){//确认的点击回调事件
-    Popup.close();
+    Popup.close({selector: '#my-Popups'});
     console.log(8877);
   }
 })

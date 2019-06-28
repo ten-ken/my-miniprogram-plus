@@ -6,6 +6,7 @@
    * 组件的属性列表
    */
   properties: {
+    id:String,
     title: {            
       type: String,     
       value: '标题'
