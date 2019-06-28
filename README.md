@@ -204,3 +204,44 @@ showTypes参照以下json里面的属性名
 | datas      |   单个对象，内容如{key：'我',content:'呵呵呵'}| Object|     |
 | color     | 高亮显示颜色 | String |   'red' 颜色参考1.1部分的color-code 这里只有前面9种颜色 |
 
+
+### 1.5 pupop 弹窗/对话框
+  json引入:
+ ```
+ "usingComponents": {
+      "popup": "/dist/my-popup/index"
+  },
+```
+  wxml引入：
+ ```  
+import Popup from '../../dist/my-popup/popup';
+```
+  js引入:
+ ```
+ "usingComponents": {
+      "popup": "/dist/my-popup/index"
+  },
+```
+
+| 参数       | 作用   |类型    |  默认值 |
+| --------   | -----:  |-----:  | :----:  |
+| id      |   控制整个弹窗的主id | String (如果改动了默认值需要在弹窗和关闭弹窗的方法中加入)|‘my-Popup’ |
+| title_color| 标题的颜色 | String |   'black' 默认为黑色 |
+| line_color     | 标题下边框线的颜色 | String |   'red' 默认为红色 |
+| btn_ok     | 确认按钮的文字显示 | String |   '确认'  |
+| btn_no     | 取消/关闭按钮的文字显示 | String |   '取消' |
+| suc_bc     | 确认按钮文字的颜色 | String |   'red' 默认为红色 |
+| err_bc     | 取消/关闭按钮文字的颜色 | String |   'grey' 默认为灰色 |
+| show       | 是否显示弹窗 | boolean |   false|
+|bind:onConfirm     | 这部分绑定确认按钮的回调，不得改动上面demo中的值| String |  '' |
+|needBind   | 是否绑定确认按钮的回调，如果为false 则本页面的_onConfirm 方法不会被回调| boolean |  false|
+
+| 方法       | 作用   |示例 |
+| --------   | -----:  | :----:  |
+| alert      |  弹窗对话框/显示弹窗|Popup.alert(); //Popup.alert( title: '提示',content: '今天从上海到北京，走了三百公里,哈哈哈哈哈哈',type: 'String');油蚕丝 |
+| close| 关闭弹窗 | Popup.close(); //如果组件id变动 需要这样调用   Popup.close({selector: '#my-Popups'}); selector是新的id值|
+
+
+
+
+
