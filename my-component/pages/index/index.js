@@ -34,12 +34,21 @@ Page({
         name: '弹窗pupop',
         url: '/pages/my-popup/index'
       },
+      {
+        icon: 'clothesfill',
+        color: 'blue',
+        badge: 0,
+        name: '底部菜单样式1',
+        url: '/pages/my-tabBar/index2'
+      },
+      {
+        icon: 'discoverfill',
+        color: 'blue',
+        badge: 0,
+        name: '底部菜单样式2',
+        url: '/pages/my-tabBar/index3'
+      } 
       // {
-      //   icon: 'clothesfill',
-      //   color: 'blue',
-      //   badge: 0,
-      //   name: '皮肤'
-      // }, {
       //   icon: 'discoverfill',
       //   color: 'purple',
       //   badge: 0,
@@ -61,7 +70,7 @@ Page({
       //   name: '版权'
       // }
     ],
-    gridCol: 3,
+    gridCol: 4,
     skin: false
   },
   showModal(e) {

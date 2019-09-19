@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "ken-tabbar": "/dist/ken-tabBar/index",
-    "mp-msg": ""/dist/msg/msg"
+    "ken-tabbar": "/dist/ken-tabBar/index"
   }
 }
